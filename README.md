@@ -3,7 +3,7 @@
  **1 :**
 ایجاد ۲۰ هزار رکورد با داده های تصادفی در جدول حساب بانکی:  
 
- -ابتدا ایجاد 500 رکورد تصادفی در جدول Person
+ -ابتدا ایجاد 1000 رکورد تصادفی در جدول Person
 ```
 from  person.temp  import create_fake_persons
 create_fake_persons(total_records=1000,batch_size=500)
