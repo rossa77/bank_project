@@ -85,11 +85,13 @@ accounts = get_higher_national_code()
 
   -لیست حساب هایی که موجودی بیشتر از 2 میلیون یا کمتر از 1 میلیون دارند(بدون index)
 ```
-!
+ from bank_account.temp import try_without_index
+ try_without_index()
 ```
- -لیست حساب هایی که موجودی بیشتر از 2 میلیون یا کمتر از 1 میلیون دارند(با index)
+ -لیست حساب هایی که موجودی بیشتر از 2 میلیون یا کمتر از 1 میلیون دارند(با index) که ابتدا ایندکس را تشکیل میدهیم :
 ```
-!
+ from bank_account.temp import try_with_index
+ try_with_index()
 ```
 
  **9 :**
