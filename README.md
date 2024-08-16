@@ -49,7 +49,8 @@ lowest_accounts = BankAccount.objects.order_by('balance')[:5]
 
  
 ```
-؟
+from person.temp import transfer_value
+transfer_value(from_account_number="3358757738337063",from_owner_firstname="Joann",from_owner_lastname="Williams",to_account_number="1379130651687472",to_owner_firstname="Brett",to_owner_lastname="Wade", value=100)
 
 ``` 
  **6 :**
