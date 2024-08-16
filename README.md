@@ -73,3 +73,31 @@ accounts = BankAccount.objects.annotate(account_number_decimal=Cast('account_num
 from bank_account.temp import get_higher_national_code 
 accounts = get_higher_national_code()
 ```
+ **8:**
+ایجاد 10 میلیون رکورد کاملاً تصادفی در جدول حساب بانکی:  
+
+ 
+```
+!
+```
+
+  -لیست حساب هایی که موجودی بیشتر از 2 میلیون یا کمتر از 1 میلیون دارند(بدون index)
+```
+!
+```
+ -لیست حساب هایی که موجودی بیشتر از 2 میلیون یا کمتر از 1 میلیون دارند(با index)
+```
+!
+```
+
+ **9 :**
+جمع موجودی هر فرد در بانک تنها با اجرای یک کوئری :  
+
+ 
+```
+
+from django.db.models import Sum
+from person.models import Person
+persons = Person.objects.annotate(total_balance=Sum('accounts__balance'))
+
+```
