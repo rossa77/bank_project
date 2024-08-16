@@ -74,11 +74,13 @@ from bank_account.temp import get_higher_national_code
 accounts = get_higher_national_code()
 ```
  **8:**
-ایجاد 10 میلیون رکورد کاملاً تصادفی در جدول حساب بانکی:  
+ایجاد 10000 رکورد کاملاً تصادفی در جدول حساب بانکی:  
 
  
 ```
-!
+ from bank_account.temp import create_fake_bankaccounts
+ create_fake_bankaccounts(total_records=10000,batch_size=1000)
+
 ```
 
   -لیست حساب هایی که موجودی بیشتر از 2 میلیون یا کمتر از 1 میلیون دارند(بدون index)
