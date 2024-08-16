@@ -6,12 +6,12 @@
  -ابتدا ایجاد 500 رکورد تصادفی در جدول Person
 ```
 from  person.temp  import create_fake_persons
-create_fake_persons()
+create_fake_persons((total_records=1000,batch_size=500))
 ```
 -سپس اجاد 2000 حساب بانکی 
 ```
 from bank_account.temp import create_fake_bankaccounts
-create_fake_bankaccounts()
+create_fake_bankaccounts((total_records=2000,batch_size=500))
 ```
 
  **2 :**
