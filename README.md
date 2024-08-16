@@ -1,1 +1,2 @@
-# bank_project
+# bank_project 
+**کوئری های خواسته شده به صورت یک فایل README.md در پوشه master پروژه قرار گرفته است**
